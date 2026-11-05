@@ -3,7 +3,7 @@ import express from "express"
 import rotaItens from "./routes/itens.routes"
 const app = express()
 app.use(express.json())
-
+console.log("app funcionando")
 app.use('/itens',rotaItens)
 
 export default app
