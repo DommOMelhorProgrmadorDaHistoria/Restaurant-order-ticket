@@ -1,5 +1,5 @@
 export interface itens{
-    nome: string,
-    categoria: string,
-    valor: number
+    nome_item: string,
+    categoria_item: string,
+    valor_item: number
 }
