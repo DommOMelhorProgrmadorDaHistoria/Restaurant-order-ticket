@@ -45,5 +45,4 @@ export async function criarItem(req: Request, res: Response){
     const resultado =  await pool.query("INSERT INTO itens (nome_item,categoria_item,valor_item)             VALUES ($1,$2,$3) RETURNING *",[nome_item,categoria_item,valor_item])
 
     return res.json(resultado.rows[0])
-
 }
