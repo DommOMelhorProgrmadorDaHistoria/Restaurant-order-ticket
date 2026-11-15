@@ -1,8 +1,10 @@
 import "dotenv/config"
 import express from "express"
 import rotaItens from "./routes/itens.routes"
+import rotaPedidos from "./routes/pedidos.routes"
 const app = express()
 app.use(express.json())
 app.use('/itens',rotaItens)
+app.use('/pedidos',(rotaPedidos))
 
 export default app
